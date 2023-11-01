@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -43,6 +44,7 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('christoomey/vim-tmux-navigator', {lazy = false})
 
 end)
 
